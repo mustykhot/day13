@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 13</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="image/WhatsApp Image 2020-03-30 at 3.44.24 PM.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header-container">
+        <div class="logo-container">
+            <img class="logo-img" src="image/logo.svg" alt="Logo">
+        </div>
+
+        <nav class="nav-container">
+            <ul class="nav-list" id="nav-toggle">
+              <li><a class="nav-list-item" href="#">PRODUCT</a></li>
+              <li><a class="nav-list-item" href="#">FEATURES</a></li>
+              <li><a class="nav-list-item" href="#">PRICING</a></li>
+              <li><a class="nav-list-item special" href="#">LOGIN</a></li>
+              <li class="dropdownLink"><a onclick="toggleDropdown()" href="javascript:;"><img src="image/icon-hamburger.svg" alt="Img"> </a></li>
+              <li class="dropdownLink2"><a onclick="toggleDropdown()" href="javascript:;"><img src="image/icon-close.svg" alt="Img"> </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="second-container">
+        <div class="second-word">
+            <div class="flex1">
+
+              <div class="new-container">
+                <h1 class="new-text">NEW</h1>
+              </div>
+
+              <div class="monograph-container">
+                <h1 class="monograph-text">MONOGRAPH DASHBOARD</h1>
+              </div>
+
+            </div>
+
+            <h1 class="power">POWERFUL INSIGHTS INTO YOUR TEAM</h1>
+            <p class="project">Project planning and time tracking for agile teams</p>
+
+            <div class="flex2">
+
+              <div class="btn-container">
+                <button class="btn" type="button" name="button">SCHEDULE A DEMO</button>
+              </div>
+
+              <div class="preview-container">
+                <h1 class="preview">TO SEE A PREVIEW</h1>
+              </div>
+
+            </div>
+
+        </div>
+
+        <div class="img-container">
+            <img class="images" src="image/illustration-devices.svg" alt="lappy">
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+    <script type="text/javascript">
+        function toggleDropdown() {
+            let navToggle = document.getElementById("nav-toggle");
+            if (navToggle.className === 'nav-list') {
+                navToggle.className += ' mobile';
+            } else {
+                navToggle.className = 'nav-list';
+            }
+        }
+    </script>
+
+
+    
+</body>
+</html>
